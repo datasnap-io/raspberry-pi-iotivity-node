@@ -15,3 +15,5 @@ RUN apt-get install -y  scons \
 RUN git clone https://github.com/datasnap-io/iotivity-node.git -b raspberry-pi-build
 WORKDIR iotivity-node
 RUN npm install --unsafe-perm
+RUN npm link
+
